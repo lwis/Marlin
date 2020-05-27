@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-  #define DEFAULT_Kp 20.35
-  #define DEFAULT_Ki 1.51
-  #define DEFAULT_Kd 68.53
+  #define DEFAULT_Kp 16.63
+  #define DEFAULT_Ki 1.31
+  #define DEFAULT_Kd 52.66
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -730,7 +730,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 100 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 420 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -956,7 +956,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 38.2, 0, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 38.2, 0, -1.42 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
